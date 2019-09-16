@@ -19,6 +19,6 @@ steps:
   displayName: 'Run a multi-line script'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '/'
-    Contents: '**'
-    TargetFolder: 'Artifacts'
+    SourceFolder: 'xyz-myresources-devops'
+    Contents: 'logic*'
+    TargetFolder: 'xyz-myresources-devops'
