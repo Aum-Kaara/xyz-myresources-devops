@@ -21,7 +21,7 @@ steps:
   inputs:
     SourceFolder: 'xyz-myresources-devops'
     Contents: '**'
-    TargetFolder: 'xyz-myresources-devops'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
     OverWrite: true
 
 - task: PublishBuildArtifacts@1
