@@ -22,7 +22,6 @@ steps:
     SourceFolder: 'xyz-myresources-devops'
     Contents: '**'
     TargetFolder: 'xyz-myresources-devops'
-    CleanTargetFolder: true
     OverWrite: true
 
 - task: PublishBuildArtifacts@1
