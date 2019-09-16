@@ -20,5 +20,13 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'xyz-myresources-devops'
-    Contents: '*'
+    Contents: '**'
     TargetFolder: 'xyz-myresources-devops'
+    CleanTargetFolder: true
+    OverWrite: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
